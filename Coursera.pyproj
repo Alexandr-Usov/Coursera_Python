@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{634b8243-6abc-413d-b4eb-52b6bb2cfc93}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile />
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Dive in Python\1 week\root_qadratic.py" />
+    <Compile Include="Dive in Python\1 week\strais.py" />
+    <Compile Include="Dive in Python\1 week\sumnum.py" />
+    <Compile Include="Dive in Python\1 week\sum_test.py" />
+    <Compile Include="Dive in Python\1 week\test_root_quadratic.py" />
+    <Compile Include="Dive in Python\2 week\decorator.py" />
+    <Compile Include="Dive in Python\2 week\keyvalue.py" />
+    <Compile Include="Dive in Python\3 week\carclasses.py" />
+    <Compile Include="Dive in Python\3 week\solution.py" />
+    <Compile Include="Dive in Python\4 week\commission.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dive in Python\3 week\example.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dive in Python\" />
+    <Folder Include="Dive in Python\1 week" />
+    <Folder Include="Dive in Python\2 week" />
+    <Folder Include="Dive in Python\3 week" />
+    <Folder Include="Dive in Python\4 week" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
